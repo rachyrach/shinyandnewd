@@ -1,0 +1,500 @@
+/*
+Theme Name: Simple Parallax Website
+Description: Simple Parallax Scrolling Effect
+Author: Samuel Dalusung
+*/
+
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;} body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+ 
+
+
+
+/*= GENERAL STYLING
+--------------------------------------------------------*/
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+h1 { 
+    font-family:"museo-sans-rounded",sans-serif;
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 50px;
+}
+
+h2 {
+   font-family:"museo-sans-rounded",sans-serif;
+   font-size: 1.6em;
+   text-align: center;
+   margin: 0;
+	padding-top: 15px;
+}
+
+h3 {
+   font-family: "museo-sans-rounded",sans-serif;
+   font-weight: normal;
+   font-size: 16px;
+   text-align: center;
+   margin: 5px 0;
+	padding: 0;
+	z-index: 0;
+	position: relative;
+}
+
+p {
+   font-family: "museo-sans-rounded",sans-serif;
+   font-weight: normal;
+   font-size: 1em;
+   text-align: left;
+   margin: 5px 0;
+	padding: 0;
+
+}
+
+.center { margin: 0 auto; }
+.content{ margin: 0 auto; width: 70%; }
+.column1{ display: block; width: 42%; float: left; margin:1% 0 1% 1.6%;}
+.column2{ display: block; width: 42%; float: right; margin:1% 0 1% 1.6%;}
+.clear { clear: both; }
+
+@media screen and (max-width: 800px) {
+    .column1, 
+    .column2 {
+        float: none;
+        width: auto;
+    }
+}
+
+/*= HEADER & NAVIGATION
+--------------------------------------------------------*/
+
+
+#header { 
+	width: 98%; 
+	height: 80px; 	
+	position: fixed;
+    top: 0;
+	left: 0;
+    z-index: 100;
+    padding-right: 2%;
+}
+
+
+
+
+.headerbg {
+    background-color: rgba(0,0,0,0); 
+    transition:top 2s ease;
+    transition: background-color 2s ease;
+}
+.scrolled {
+    background-color: rgba(109,198,182,1);
+}
+
+
+
+
+#logo img{
+
+	margin: 20px;
+	float: left;
+	width: 200px;
+	max-height: 40px;
+	display: block;
+
+}
+
+#nav { float: right; margin-top: 20px;}
+
+
+#menu-icon {
+
+	display: hidden;
+	width: 50px;
+	height: 50px;
+	background:url({{ site.url }}{{ site.baseurl }}/img/menu-icon.png) center no-repeat;
+
+}
+
+
+
+ul{
+	list-style: none;	
+}
+
+li{
+	display: inline-block;
+	float: left;
+	padding: 10px
+}
+
+li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family:"museo-sans-rounded"; text-transform: uppercase; }
+li a.active { color: #fff; opacity:1; border: 2px solid #fff; padding: 5px 10px; border-radius: 3px; }
+li a:hover { color: #fff; opacity:1; }
+
+@media only screen and (max-width : 800px) {
+
+	#header {
+	width: 98%;
+	height: 76px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+        padding-right: 2%;
+
+	}
+    
+    
+
+
+	#menu-icon {
+
+		display:inline-block;
+
+	}
+
+    
+    nav ul {
+        display:none;
+    }
+	nav:hover ul  { 
+        display: block;
+		position: absolute;
+		padding: 20px 0;
+		background-color: #6dc6b6;;
+		right: 0px;
+		top: 50px;
+		width: 30%;
+	}
+
+	nav li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+
+	nav a:hover ul {
+
+		display: block;
+
+	}
+    
+}
+
+
+.portrait {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/*= BUTTONS
+--------------------------------------------------------*/
+
+div.button{
+    width: 40%;
+	padding: 10px 10px; 
+	margin: 20px auto;
+	text-align: center;
+	border: 4px solid #fff; 
+	color: #fff; 
+    font-family:"museo-sans-rounded"; 
+    text-transform: uppercase; 
+	background: rgba(90, 90, 90, 0.56); 
+	font-size: 1.2em;
+	cursor: pointer;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.button a{
+    text-transform: uppercase; 
+    text-decoration: none;
+    color: #fff;
+}
+.button:hover { background: #ded832; }
+
+
+
+/*= SLIDES STYLING
+--------------------------------------------------------*/
+
+#slide1, #slide2{ width: 100%; }
+#slide1{
+	background:url(../img/fsam2.jpg) 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 600px;
+	margin: 0;
+	padding: 200px 0 260px 0;
+	background-size: cover;
+}
+
+#slide2{
+	background-color: #fff;
+    color: #999;
+	height: auto;
+    padding: 100px 0;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#slide3{
+	background-color: #da648e;
+	color: #fff;
+    width: 100%;
+	height: auto;
+	padding: 100px 0 ;
+    margin:0 auto;
+    overflow:auto;
+    line-height: 1.5em;
+    z-index: 0;
+
+}
+
+.date {
+ background-color: #6dc6b6;
+    padding: 4px 10px;
+    margin-right: 5px;
+}
+
+.btn-event {
+    text-transform:uppercase;
+    font-weight: 300 !important;
+    color: #ded832;
+}
+
+
+#slide4{
+background: url(../img/studio.jpg) 50% 0 no-repeat fixed;
+	height: auto;
+	margin: 0 auto;
+	padding: 200px 0;
+	color: #fff;
+    text-align: center;
+    font-style: bold;
+	background-size: cover;
+}
+
+#slide4 p{
+    font-size: 1.3em;
+    line-height: 1.2em;
+}
+#slide4 h2{
+font-size: 1.8em;
+  font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+#slide5{
+     background-color: #61a655;
+	color: #fff;
+    text-align: center;
+	height: auto;
+	padding: 100px 0;
+    overflow: auto;
+
+}
+
+
+/*= CONTACT FORM
+--------------------------------------------------------*/
+
+
+#contact-form {
+    width:100%; 
+    position:relative;
+    left:0;
+    padding-bottom: 50px;
+}
+ 
+
+ 
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea, 
+#contact-form label {
+    font-size:15px;
+    margin-bottom:2px;
+    text-align: left; 
+    color: #fff;
+
+}
+ 
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea {
+    width:100%;
+    border: 3px solid #ded832;
+    margin-bottom:20px;
+    padding:10px 0;
+    border-radius: 10px; 
+        background-color: #69af66;
+        padding-left: 10px;
+}
+ 
+#contact-form input:focus, 
+#contact-form select:focus, 
+#contact-form textarea:focus {
+       border: 3px solid #ded832;
+    background-color: #69af66;
+}
+ 
+#contact-form textarea {
+    height:150px;
+    resize: none;
+}
+ 
+#contact-form label {
+    display:block;
+}
+
+ 
+#contact-form #submit-button {
+    width: 130px;
+    padding-left: 0;
+    color:#FFF;
+    border:none;
+    display:block;
+    float:right;
+      text-align: center; 
+    text-transform: uppercase;
+    margin-bottom:0px;
+    background-color: rgba(109,198,182,1);
+    -moz-border-radius:8px;
+}
+ 
+#contact-form #submit-button:hover {
+    background-color: #ded832;
+}
+ 
+#contact-form #submit-button:active {
+    position:relative;
+    top:1px;
+}
+ 
+#contact-form #loading {
+    width:32px;
+    height:32px;
+    display:block;
+    position:absolute;
+    right:130px;
+    bottom:16px;
+    display:none;
+}
+ 
+#errors {
+    border:solid 1px #E58E8E;
+    padding:10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    display:none;
+}
+ 
+#errors li {
+    padding:2px;
+    list-style:none;    
+}
+ 
+#errors li:before {
+    content: ' - ';    
+}
+ 
+#errors #info {
+    font-weight:bold;
+}
+ 
+#errors #info:before {
+    content: '';    
+}
+ 
+#success {
+    border:solid 1px #ded832;
+    padding:25px 10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#D3EDD3;
+    font-weight:bold;
+    display:none;
+}
+ 
+#errors.visible, #success.visible {
+    display:block;    
+}
+ 
+#req-field-desc {
+    font-style:italic;
+}
+
+.required {
+        color: #ded832;
+}
+ 
+/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
+input:required, textarea:required {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+
+
+
+ 
+/* Normalize placeholder styles */
+ 
+/* chrome, safari */
+::-webkit-input-placeholder {
+    color: #ded832;
+    font-style:italic;
+}
+ 
+/* mozilla */
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #ded832;
+    font-style:italic;
+}
+ 
+/* ie (faux placeholder) */
+input.placeholder-text, textarea.placeholder-text  { 
+    color: #ded832;
+    font-style:italic;
+}
+
+
+/* MAP */
+
+.iframe {
+    border:0; 
+    float: right; 
+    position: relative;
+}
+
+
+
+
+/*= FOOTER 
+--------------------------------------------------------*/
+
+#copyright  { color: #fff; font-family:"museo-sans-rounded";  font-size: 14px; text-align: right; background-color:#6dc6b6; height:80px; width: 100%; position: relative; bottom: 0; padding-top: 30px;}
+#copyright  a { text-decoration: none; color: #fff;  }
