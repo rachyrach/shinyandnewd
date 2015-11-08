@@ -1,25 +1,5 @@
-<<<<<<< HEAD
 # Site settings
 name: Shiny and Newd
 markdown: redcarpet
 pygments: true
 baseurl: /shinyandnewd
-=======
-name: "Shiny and Newd"
-description: ""
-
-# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
-# When testing locally leave blank or use http://localhost:4000
-url: "http://rachyrach.github.io/shinyandnewd"
-baseurl: "/shinyandnewd"
-
-
-future: true
-markdown: rdiscount
-permalink: pretty
-pygments: true
-
-
-
-
->>>>>>> master
