@@ -1,5 +1,6 @@
 # Site settings
 name: Shiny and Newd
-markdown: redcarpet
+markdown: rdiscount
 pygments: true
-baseurl: /shinyandnewd
+url: "rachyrach.github.io
+baseurl: "/shinyandnewd"
