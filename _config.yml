@@ -1,5 +1,5 @@
 # Site settings
-name: Shiny and Newd
+name: "Shiny and Newd"
 markdown: rdiscount
 pygments: true
 url: "rachyrach.github.io
