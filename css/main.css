@@ -94,7 +94,7 @@ p {
     transition: background-color 2s ease;
 }
 .scrolled {
-    background-color: rgba(109,198,182,1);
+    background: rgba(109,198,182,1);
 }
 
 
@@ -111,7 +111,7 @@ p {
 }
 
 nav { float: right; 
-    margin-top: 20px;
+    margin-top: 5px;
 transition:top 0.5s ease;
   transition: background-color 0.5s ease;}
 
