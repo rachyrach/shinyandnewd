@@ -1,11 +1,9 @@
-$(document).ready(function(){
-  $(window).bind('scroll', function() {
-    var distance = 600;
-    if ($(window).scrollTop() > distance) {
-      $('nav').addClass('scrolled');
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 500) {
+        $("nav").addClass("scrolling");
+    } else {
+        $("nav").removeClass("scrolling");
     }
-    else {
-      $('nav').removeClass('scrolled');
-    }
-  });
 });
