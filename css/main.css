@@ -110,7 +110,10 @@ p {
 
 }
 
-#nav { float: right; margin-top: 20px;}
+#nav { float: right; 
+    margin-top: 20px;
+transition:top 0.5s ease;
+  transition: background-color 0.5s ease;}
 
 
 #menu-icon {
