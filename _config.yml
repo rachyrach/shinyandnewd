@@ -2,5 +2,5 @@
 name: "Shiny and Newd"
 markdown: rdiscount
 pygments: true
-url: "rachyrach.github.io/shinyandnewd"
-baseurl: ""
+url: "rachyrach.github.io"
+baseurl: "/shinyandnewd"
