@@ -93,9 +93,7 @@ p {
     transition:top 2s ease;
     transition: background-color 2s ease;
 }
-.scrolled {
-    background: rgba(109,198,182,1);
-}
+
 
 
 
@@ -110,10 +108,9 @@ p {
 
 }
 
-nav { float: right; 
-    margin-top: 5px;
-transition:top 0.5s ease;
-  transition: background-color 0.5s ease;}
+#nav { float: right; 
+    margin-top: 15px;
+}
 
 
 #menu-icon {
@@ -192,6 +189,10 @@ li a:hover { color: #fff; opacity:1; }
 
 	}
     
+}
+
+.scrolled {
+    background: rgba(109,198,182,1);
 }
 
 
