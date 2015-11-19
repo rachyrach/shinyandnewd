@@ -505,7 +505,7 @@ input.placeholder-text, textarea.placeholder-text  {
     height:80px; 
     width: 100%; 
 	height: auto;
-	padding: 20px 50px 20px 0;
+	padding: 20px 50px;
     overflow: auto;
 }
 #copyright  a { text-decoration: none; color: #fff;  }
