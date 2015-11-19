@@ -496,5 +496,16 @@ input.placeholder-text, textarea.placeholder-text  {
 /*= FOOTER 
 --------------------------------------------------------*/
 
-#copyright  { color: #fff; font-family:"museo-sans-rounded";  font-size: 14px; text-align: right; background-color:#6dc6b6; height:80px; width: 100%; padding-top: 30px;}
+#copyright  { 
+    color: #fff; 
+    font-family:"museo-sans-rounded";  
+    font-size: 14px; 
+    text-align: right; 
+    background-color:#6dc6b6; 
+    height:80px; 
+    width: 100%; 
+	height: auto;
+	padding: 20px 0;
+    overflow: auto;
+}
 #copyright  a { text-decoration: none; color: #fff;  }
