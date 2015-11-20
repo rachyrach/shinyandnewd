@@ -75,7 +75,7 @@ p {
 --------------------------------------------------------*/
 
 
-#header { 
+.nav { 
 	width: 98%; 
 	height: 80px; 	
 	position: fixed;
@@ -108,7 +108,7 @@ p {
 
 }
 
-#nav { float: right; 
+.nav { float: right; 
     margin-top: 15px;
 }
 
