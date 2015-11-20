@@ -229,8 +229,8 @@ div.button{
 /*= SLIDES STYLING
 --------------------------------------------------------*/
 
-#slide1, #slide2{ width: 100%; }
-#slide1{
+#home, #about{ width: 100%; }
+#home{
 	background:url(../img/fsam2.jpg) 50% 0 no-repeat fixed;
 	color: #fff;
 	height: 600px;
@@ -239,7 +239,7 @@ div.button{
 	background-size: cover;
 }
 
-#slide2{
+#about{
 	background-color: #fff;
     color: #999;
 	height: auto;
@@ -248,7 +248,7 @@ div.button{
 	overflow: hidden;
 }
 
-#slide3{
+#events{
 	background-color: #da648e;
 	color: #fff;
     width: 100%;
@@ -274,7 +274,7 @@ div.button{
 }
 
 
-#slide4{
+#studio11{
 background: url(../img/studio.jpg) 50% 0 no-repeat fixed;
 	height: auto;
 	margin: 0 auto;
@@ -285,11 +285,11 @@ background: url(../img/studio.jpg) 50% 0 no-repeat fixed;
 	background-size: cover;
 }
 
-#slide4 p{
+#studio11 p{
     font-size: 1.3em;
     line-height: 1.2em;
 }
-#slide4 h2{
+#studio11 h2{
 font-size: 1.8em;
   font-weight: 700;
     text-transform: uppercase;
@@ -297,7 +297,7 @@ font-size: 1.8em;
 
 
 
-#slide5{
+#contact{
      background-color: #61a655;
 	color: #fff;
     text-align: center;
