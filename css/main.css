@@ -264,6 +264,7 @@ div.button{
 
 .date {
  background-color: #6dc6b6;
+    width: auto;
     padding: 4px 10px;
     margin-right: 5px;
     margin-bottom: 1px;
