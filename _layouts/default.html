@@ -1,20 +1,9 @@
-<?php session_start() ?>
-<!DOCTYPE html>
-<html lang="en">
- 
+{% include head.html %}
 
-  {% include head.html %}
+{% include header.html %}
 
-  <body>
-      <base href="{{ site.baseurl }}" />
+{{ content }}
 
-    {% include header.html %}
-
-        {{ content }}
+{% include footer.html %}
    
 
-    
-
-  </body>
-
-</html>
