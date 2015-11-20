@@ -133,8 +133,8 @@ li{
 }
 
 li a { color: #fff; opacity:0.6; font-size: 16px; text-decoration: none; font-family:"museo-sans-rounded"; text-transform: uppercase; }
-li a.active { color: #fff; opacity:1;  }
-li a:hover { color: #fff; opacity:1; border: 2px solid #fff; padding: 5px 10px; border-radius: 3px;}
+li a.active { color: #fff; opacity:1; border: 2px solid #fff; padding: 5px 10px; border-radius: 3px;}
+li a:hover { color: #fff; opacity:1; }
 
 @media only screen and (max-width : 800px) {
 

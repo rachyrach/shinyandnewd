@@ -31,7 +31,7 @@ $(document).ready(function() {
          $(this).click(function() {
             $("#nav li a").removeClass("active");
             $(this).addClass('active');
-           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           $('html, body').animate({scrollTop: targetOffset}, 500);
            return false;
          });
       }
