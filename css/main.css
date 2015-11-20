@@ -260,7 +260,7 @@ div.button{
 	padding: 100px 0 ;
     margin:0 auto;
     overflow:auto;
-    line-height: 1.5em;
+    line-height: 1.4em;
     z-index: 0;
 
 }
@@ -269,6 +269,7 @@ div.button{
  background-color: #6dc6b6;
     padding: 4px 10px;
     margin-right: 5px;
+    margin-bottom: 10px;
 }
 
 .btn-event {
