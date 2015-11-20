@@ -237,7 +237,14 @@ div.button{
 	height: 600px;
 	margin: 0;
 	padding: 200px 0 260px 0;
-	background-size: cover;
+	 -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
 }
 
 #about{
@@ -285,7 +292,14 @@ background: url(../img/studio.jpg) 50% 0 no-repeat fixed;
 	color: #fff;
     text-align: center;
     font-style: bold;
-	background-size: cover;
+	 -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
 }
 
 #studio11 p{
@@ -309,6 +323,8 @@ font-size: 1.8em;
     overflow: auto;
 
 }
+
+
 
 
 /*= CONTACT FORM
