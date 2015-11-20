@@ -75,7 +75,7 @@ p {
 --------------------------------------------------------*/
 
 
-.nav { 
+#header { 
 	width: 98%; 
 	height: 80px; 	
 	position: fixed;
@@ -86,14 +86,14 @@ p {
 }
 
 
-
-
 .headerbg {
     background-color: rgba(0,0,0,0); 
     transition:top 2s ease;
     transition: background-color 2s ease;
 }
-
+.scrolled {
+    background-color: rgba(109,198,182,1);
+}
 
 
 
@@ -108,9 +108,7 @@ p {
 
 }
 
-.nav { float: right; 
-    margin-top: 15px;
-}
+#nav { float: right; margin-top: 20px;}
 
 
 #menu-icon {
@@ -191,9 +189,6 @@ li a:hover { color: #fff; opacity:1; }
     
 }
 
-.scrolled {
-    background: rgba(109,198,182,1);
-}
 
 
 .portrait {
