@@ -17,23 +17,7 @@
     <script src="https://use.typekit.net/lxs1wlt.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
     
-		<script>
-<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV --->
-$(document).ready(function() {
 
-         $(this).click(function() {
-            $("#nav li a").removeClass("active");
-            $(this).addClass('active');
-           $('html, body').animate({scrollTop: targetOffset}, 1000);
-           return false;
-         });
-
-});
-
-
-
-
-</script>
         
         	<script>
 	$(function() {
@@ -52,6 +36,21 @@ $(document).ready(function() {
 	  });
 	});
 	</script>
+        
+        		<script>
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV --->
+$(document).ready(function() {
+
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+
+});
+
+</script>
 
 
  
