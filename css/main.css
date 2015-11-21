@@ -120,6 +120,7 @@ p {
 	display: hidden;
 	width: 45px;
 	height: 45px;
+    margin-right: 5px;
 	background:url(../img/menu-icon.png) center no-repeat;
 
 }
