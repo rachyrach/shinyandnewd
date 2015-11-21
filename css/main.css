@@ -327,18 +327,12 @@ font-size: 1.8em;
 
 @media (max-width: 800px) {
     #studio11{
-background: url(../img/studio.jpg) 50% 50% no-repeat fixed;
-	margin: 0 auto;
-	padding: 200px 0;
-	color: #fff;
-    text-align: center;
-    font-style: bold; 
-            background-size: 800px 439px;
+background-attachment:scroll;
 
 }
     
     #home{
-	background:url(../img/fsam2.jpg) no-repeat center center fixed;
+	background-attachment:scroll;
 }
 }
 
