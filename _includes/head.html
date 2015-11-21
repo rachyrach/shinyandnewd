@@ -26,6 +26,9 @@
 
 	      var target = $(this.hash);
 	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
 	      if (target.length) {
 	        $('html,body').animate({
 	          scrollTop: target.offset().top
@@ -35,20 +38,8 @@
 	    }
 	  });
 	});
-	</script>
-        
-        		<script>
-<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV --->
-$(document).ready(function() {
-
-         $(this).click(function() {
-            $("#nav li a").removeClass("active");
-            $(this).addClass('active');
-           $('html, body').animate({scrollTop: targetOffset}, 1000);
-           return false;
-         });
-
-});
+       
+       
 
 </script>
 
