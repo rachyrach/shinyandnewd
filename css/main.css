@@ -334,7 +334,7 @@ background-attachment:scroll;
     #home{
 	background-attachment:scroll;
 background-size: 1000px;
-        height: 100px;
+        height: 0px;
 }
 }
 
