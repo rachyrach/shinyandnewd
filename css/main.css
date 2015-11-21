@@ -338,12 +338,7 @@ background: url(../img/studio.jpg) 50% 50% no-repeat fixed;
 }
     
     #home{
-	background:url(../img/fsam2.jpg) 50% 50% no-repeat fixed;
-	color: #fff;
-	height: 600px;
-	margin: 0;
-	padding: 200px 0 260px 0;
-    background-size: 1000px auto; 
+	background:url(../img/fsam2.jpg) no-repeat center center fixed;
 }
 }
 
