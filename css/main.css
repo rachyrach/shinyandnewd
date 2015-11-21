@@ -120,7 +120,6 @@ p {
 	display: hidden;
 	width: 45px;
 	height: 45px;
-    margin-right: 5px;
 	background:url(../img/menu-icon.png) center no-repeat;
 
 }
@@ -150,7 +149,7 @@ li a:hover { color: #fff; opacity:1; }
 	top: 0;
 	left: 0;
 	z-index: 100;
-        padding-right: 1%;
+        padding-right: 2%;
 
 	}
     
@@ -334,7 +333,7 @@ background-attachment:scroll;
     
     #home{
 	background-attachment:scroll;
-        height: 400px;
+        width: 80%;
 }
 }
 
