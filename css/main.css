@@ -334,7 +334,7 @@ background: url(../img/studio.jpg) 50% 0 no-repeat fixed;
 	color: #fff;
     text-align: center;
     font-style: bold; 
-    background-size: 50%; 
+    background-size: auto 100%; 
 }
 }
 
