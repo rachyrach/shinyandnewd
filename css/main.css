@@ -325,6 +325,19 @@ font-size: 1.8em;
 
 }
 
+@media (max-width: 800px) {
+    #studio11{
+background: url(../img/studio.jpg) 50% 0 no-repeat fixed;
+	height: auto;
+	margin: 0 auto;
+	padding: 200px 0;
+	color: #fff;
+    text-align: center;
+    font-style: bold; 
+    background-size: 800px; 
+}
+}
+
 
 
 
