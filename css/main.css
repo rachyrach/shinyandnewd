@@ -336,6 +336,17 @@ background: url(../img/studio.jpg) 50% 0 no-repeat fixed;
     width: auto;
         height: 100%;
 }
+    
+    #home{
+	background:url(../img/fsam2.jpg) 50% 0 no-repeat fixed;
+	color: #fff;
+	height: 600px;
+	margin: 0;
+	padding: 200px 0 260px 0;
+   width: auto;
+        height: 100%
+}
+
 }
 
 
