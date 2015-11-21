@@ -43,10 +43,11 @@
 
 
 <!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV --->   
-  $(this).click(function() {
+  $(document).ready(function() {
+       $('a[href*=#]:not([href=#])').click(function() {
             $("#nav li a").removeClass("active");
             $(this).addClass('active');
-        
+         });
          });
 
 
